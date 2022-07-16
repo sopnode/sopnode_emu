@@ -13,9 +13,11 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "lahsini/sopnode"
-  config.vm.box_version = "1.0"
-  config.vm.network "private_network", ip:"192.168.34.3"
-  config.vm.network "private_network", ip:"10.255.255.4",virtualbox__intnet: true
+  config.vm.box_version = "1.1"
+  config.vm.hostname = "sw2"
+  config.vm.network "private_network", ip:"192.168.34.4"
+  config.vm.network "private_network", ip:"10.255.255.4",netmask:"255.255.0.0", virtualbox__intnet: true
+  config.vm.network "private_network", ip:"10.10.255.3",netmask:"255.255.0.0",virtualbox__intnet: true
   config.vm.boot_timeout = 1200
   config.vm.synced_folder "./", "/vagrant"
   config.vm.box_check_update = false
