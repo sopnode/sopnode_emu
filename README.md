@@ -27,9 +27,9 @@ From the website below, download and install the appropriate version of vagrant 
 ### Download the emulator image
 Vagrant will automatically search for the box and download it on your first ``` vagrant up``` command, but you can also download the box manually if you wish to.
 
-If you want to download the box manually, go to the link below and download the latest version of the box  (v1.1)
+If you want to download the box manually, go to the link below and download the box : 
 
-[https://app.vagrantup.com/lahsini/boxes/sopnode/versions/1.1](https://app.vagrantup.com/lahsini/boxes/sopnode/versions/1.1)
+[https://drive.google.com/file/d/1VPkwNMBCsAQGExh3tPbdm2kCm83CoSwn/view?usp=sharing](https://drive.google.com/file/d/1VPkwNMBCsAQGExh3tPbdm2kCm83CoSwn/view?usp=sharing)
 
 after downloading the box you can add it to vagrant with this commad: 
 
