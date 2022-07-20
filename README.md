@@ -115,6 +115,5 @@ We also provide a pre setup box with `Ansible` that can be used to manipulate th
 ```console
 cd AnsibleController
 vagrant up
-cd ..
 ```
 Now you have all your environment setup. To obtain a console on a switch, go in the directory where its Vagrantfile is defined and run the command `vagrant ssh`. It is worth noting that this particular directory is mounted in the `/vagrant` directory on the switch.
