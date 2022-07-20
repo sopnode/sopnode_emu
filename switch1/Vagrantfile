@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "lahsini/sopnode"
   config.vm.hostname = "sw1"
   config.vm.network "private_network", ip:"192.168.34.3"
-  config.vm.network "private_network", ip:"10.255.255.3",netmask:"255.255.0.0",virtualbox__intnet: true
+  config.vm.network "private_network", ip:"10.255.255.1",netmask:"255.255.255.252",virtualbox__intnet: "link01"
   config.vm.boot_timeout = 1200
   config.vm.synced_folder "./", "/vagrant"
   config.vm.box_check_update = false
@@ -23,8 +23,8 @@ Vagrant.configure("2") do |config|
     vb.customize ["modifyvm", :id, "--cableconnected1", "on"]
   end
   config.vm.provider "virtualbox" do |v|
-      v.memory = 1024
-      v.cpus = 1
+      v.memory = 2800
+      v.cpus = 2
   end
   #config.vm.provider "virtualbox" do |v|
   #  v.memory = 2058
