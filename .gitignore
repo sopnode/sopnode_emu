@@ -1,3 +1,8 @@
 */.vagrant
 */*.box
 */SLICES
+*.ssh
+.terraform
+terraform.*
+.terraform.*
+!terraform.tfvars
